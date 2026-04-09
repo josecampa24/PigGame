@@ -57,14 +57,22 @@ btnHold.addEventListener(`click`, function() {
 });
 
 btnNew.addEventListener(`click`,function(){
-    score0.textContent = 0;
-score1.textContent = 0;
-currentScore0El=0;
-currentScore0El=0;
-diceEl.classList.add(`hidden`);
-playing =true;
-player0El.classList.remove(`player--winner`);
-player1El.classList.remove(`player--winner`);
-player0El.classList.add(`player--active`);
-player1El.classList.remove(`player--active`);
+     score0.textContent = 0;
+    score1.textContent = 0;
+    
+    
+    currentScore0El.textContent = 0;
+    currentScore1El.textContent = 0;
+   
+    scores[0] = 0;
+    scores[1] = 0;
+    currentScore = 0;
+    ActivePlayer = 0;
+    playing = true;
+    
+    diceEl.classList.add(`hidden`);
+    player0El.classList.remove(`player--winner`);
+    player1El.classList.remove(`player--winner`);
+    player0El.classList.add(`player--active`);
+    player1El.classList.remove(`player--active`);
 })
