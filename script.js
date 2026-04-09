@@ -55,3 +55,16 @@ btnHold.addEventListener(`click`, function() {
     switchPlayer();
 }
 });
+
+btnNew.addEventListener(`click`,function(){
+    score0.textContent = 0;
+score1.textContent = 0;
+currentScore0El=0;
+currentScore0El=0;
+diceEl.classList.add(`hidden`);
+playing =true;
+player0El.classList.remove(`player--winner`);
+player1El.classList.remove(`player--winner`);
+player0El.classList.add(`player--active`);
+player1El.classList.remove(`player--active`);
+})
